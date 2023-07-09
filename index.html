@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="cuerpo">
+    <header class="cabecera">
+        <img src="assets/Logo.png" alt="Logo alura" class="cabecera__logo">
+        <h1 class="cabecera__titulo">Encriptador</h1>
+        <img src="assets/insignia01.png" width="120" id="insignia">
+    </header>
+    <div class="container">
+        <div class="encriptador">
+            <textarea id="encriptador__entrada" cols="30" rows="10" placeholder="Ingrese el texto aqui"
+                autofocus></textarea>
+        </div>
+        <div>
+            <p class="condicion">Solo letras minusculas y sin acentos</p>
+        </div>
+        <div class="caja-botones">
+            <button id="btn-encrypt" onclick="encriptar()">Encriptar</button>
+            <button id="btn-decrypt" onclick="desencriptar()">Desencriptar</button>
+        </div>
+        <div class="resultado">
+            <div id="resultado__logo">
+                <img src="assets/Muñeco.png" alt="buscador" id="muneco__logo">
+            </div>
+            <textarea
+            style="resize: none"
+            class="msg-result"
+            readonly
+            name="msg-result"
+            id="result"
+            cols="30"
+            rows="10"
+            ></textarea>
+            <h2 class="resultado__mensaje">Ningun mensaje fue encontrado</h2>
+            <p id="resultado__instruccion">Ingresa el texto que desees encriptar o desencriptar</p>
+            <div class="resultado__boton">
+                <button id="resultado__botonCopia" type="button" onclick="copy()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<footer class="creditos">
+    <p>Hecho por Melanie Vazquez Magaña</p>
+    <a href="https://github.com/guausoyungato" title="GitHub" target="_blank">
+        <img src="assets/github.png" width="25" height="25">
+    </a>
+    <a href="https://www.linkedin.com/in/melanie-vazquez-19a466270/" title="Linkedin" target="_blank">
+        <img src="assets/icons8-linkedin.svg" width="45" height="30">
+    </a>
+    <p>E-mail: melvazquez012@gmail.com</p>
+</footer>
+<script src="java.js"></script>
+
+</html>
